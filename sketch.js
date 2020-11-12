@@ -41,9 +41,9 @@ function setup(){
 function draw(){
  background(background_img);
   
-  if(back.x < 180){
-     back.x = width/2;
-  }
+//   if(back.x < 180){
+//      back.x = width/2;
+//   }
   
   if(invisibleGround.x < width/2){
      invisibleGround.x = width/2;
@@ -66,7 +66,7 @@ function draw(){
   camera.position.x = monkey.x;
   camera.position.y = height/2;
   
-  if(keyDown("space") && monkey.y >= 220){
+  if(keyDown("space") && monkey.y >= 200){
     monkey.velocityY = -24; 
   }
   
